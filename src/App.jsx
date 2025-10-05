@@ -12,7 +12,7 @@ import SectionGrid from "./components/SectionGrid.jsx";
 
 import Produkter from "./pages/Produkter.jsx";
 import OmOss from "./pages/OmOss.jsx";
-import HvaViGjor from "./pages/HvaViGjor.jsx";
+import HvaViGjor from "./pages/Hvavigjor.jsx"
 import Kontakt from "./pages/Kontakt.jsx";
 
 import TopCTA from "./components/TopCTA";
