@@ -129,3 +129,5 @@ export function useParallaxRef({ speed = 0.1, axis = "y", enabled = true } = {})
 
   return { ref, style };
 }
+
+

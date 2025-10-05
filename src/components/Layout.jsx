@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import SidebarMenu from "./SidebarMenu";
+import SideBarMenu from "./SideBarMenu";
 import Footer from "./Footer";
 import "../App.css";
 
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
         </div>
       </div>
 
-      <SidebarMenu />
+      <SideBarMenu />
 
       {/* Hovedinnhold m/sideovergang */}
       <AnimatePresence mode="wait" initial={false}>
@@ -51,3 +51,5 @@ export default function Layout({ children }) {
     </div>
   );
 }
+
+

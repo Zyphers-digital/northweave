@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Layout from "./components/Layout.jsx";
-import SidebarMenu from "./components/SidebarMenu.jsx";
+import SideBarMenu from "./components/SideBarMenu.jsx";
+
 import Navbar from "./components/Navbar.jsx";
 import TopLogo from "./components/TopLogo.jsx";
 
@@ -32,7 +33,7 @@ export default function App() {
       <Navbar />
 
       {/* Menyikon/panel globalt */}
-      <SidebarMenu />
+      <SideBarMenu />
 
       {/* Sideruter */}
       <Routes>
@@ -81,3 +82,5 @@ export default function App() {
     </>
   );
 }
+
+

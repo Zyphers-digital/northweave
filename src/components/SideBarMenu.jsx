@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import "./SidebarMenu.css";
+import "./SideBarMenu.css";
 
-export default function SidebarMenu() {
+export default function SideBarMenu() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
@@ -59,3 +59,5 @@ export default function SidebarMenu() {
     </>
   );
 }
+
+
