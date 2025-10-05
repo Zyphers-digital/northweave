@@ -1,0 +1,30 @@
+<!-- src/assets/NorthWeaveLogo.svg -->
+<svg width="512" height="128" viewBox="0 0 512 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nwGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6EE7F2"/>
+      <stop offset="1" stop-color="#39D2E3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Merke (N + vev) -->
+  <g transform="translate(8,12)">
+    <rect x="0" y="0" width="72" height="72" rx="18" fill="url(#nwGrad)"/>
+    <g transform="translate(16,16)">
+      <path d="M0 40V0h8l24 26V0h8v40h-8L8 14v26H0z" fill="#0B0D10"/>
+      <!-- vev-linjer -->
+      <path d="M0 48h56" stroke="#c6f6d5" stroke-opacity=".25"/>
+      <path d="M0 56h56" stroke="#c6f6d5" stroke-opacity=".18"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(96,22)">
+    <text x="0" y="30" font-family="Poppins, Inter, Arial, sans-serif" font-weight="800" font-size="36" fill="url(#nwGrad)">
+      NorthWeave
+    </text>
+    <text x="2" y="58" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="14" fill="#b6c1cc">
+      Avanserte kompositter • Karbondesign • Nordisk håndverk
+    </text>
+  </g>
+</svg>

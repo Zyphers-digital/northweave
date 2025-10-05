@@ -1,0 +1,41 @@
+/* --------------------------------------------
+   NorthWeave — base (UTF-8)
+   Minimal reset + font + bakgrunn
+   -------------------------------------------- */
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --bg:#0b0d0f;
+  --text:#eef1f4;
+}
+
+/* Global body-stil (samme font som i App.css) */
+body{
+  font-family: "Poppins", "Inter", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Bedre focus-ring (tilgjengelighet) */
+:focus-visible{
+  outline: 2px solid rgba(95, 209, 255, 0.7);
+  outline-offset: 2px;
+}
+
+/* Fjern blå highlight på mobil ved trykk */
+* { -webkit-tap-highlight-color: transparent; }
+
+/* Smooth scroll over hele siten */
+html { scroll-behavior: smooth; }

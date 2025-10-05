@@ -1,0 +1,33 @@
+<!-- NorthWeave – kompakt logo for navbar / toplogo -->
+<svg width="220" height="56" viewBox="0 0 440 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nwGradMini" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6EE7F2"/>
+      <stop offset="1" stop-color="#39D2E3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Merkeikon -->
+  <g transform="translate(4,10)">
+    <rect x="0" y="0" width="72" height="72" rx="18" fill="url(#nwGradMini)"/>
+    <g transform="translate(16,16)">
+      <path d="M0 40V0h8l24 26V0h8v40h-8L8 14v26H0z" fill="#0B0D10"/>
+      <path d="M0 48h56" stroke="#c6f6d5" stroke-opacity=".25"/>
+      <path d="M0 56h56" stroke="#c6f6d5" stroke-opacity=".18"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(96,24)">
+    <text
+      x="0"
+      y="36"
+      font-family="Poppins, Inter, Arial, sans-serif"
+      font-weight="800"
+      font-size="42"
+      fill="url(#nwGradMini)"
+    >
+      NorthWeave
+    </text>
+  </g>
+</svg>

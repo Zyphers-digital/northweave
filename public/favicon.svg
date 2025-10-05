@@ -1,0 +1,30 @@
+<!-- NorthWeave favicon – tynn N, riktig \-diagonal, sentrert -->
+<svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="nwGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6EE7F2"/>
+      <stop offset="1" stop-color="#39D2E3"/>
+    </linearGradient>
+
+    <!-- Klipp området mellom stolpene: x=29..43, y=12..60 (14px bredt) -->
+    <clipPath id="betweenPosts">
+      <rect x="29" y="12" width="14" height="48" />
+    </clipPath>
+  </defs>
+
+  <!-- Bakgrunn -->
+  <rect x="0" y="0" width="72" height="72" rx="16" fill="url(#nwGrad)"/>
+
+  <!-- Stolper (10 px brede), symmetrisk -->
+  <rect x="19" y="12" width="10" height="48" fill="#0B0D10"/>
+  <rect x="43" y="12" width="10" height="48" fill="#0B0D10"/>
+
+  <!-- Diagonal "\" (10 px tykk) – tegnet lengre, men KLIPPET mellom stolpene -->
+  <g clip-path="url(#betweenPosts)">
+    <path d="M23 0 L51 72"
+          stroke="#0B0D10"
+          stroke-width="10"
+          stroke-linecap="square"
+          stroke-linejoin="miter"/>
+  </g>
+</svg>

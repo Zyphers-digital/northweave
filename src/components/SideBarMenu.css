@@ -1,0 +1,146 @@
+/* Toppbar */
+.navbar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 22px;background:rgba(10,12,14,.9);border-bottom:1px solid #1b2026;
+  backdrop-filter:blur(8px);position:fixed;top:0;left:0;width:100%;z-index:100;
+}
+.logo a{font-size:20px;font-weight:700;color:#00e1ff;text-decoration:none;}
+.menu-btn{background:none;border:none;font-size:26px;color:#eef1f4;cursor:pointer;}
+.menu-btn:hover{color:#00e1ff;}
+
+/* Sidepanel */
+.sidebar{
+  position:fixed;top:0;left:0;height:100vh;width:240px;z-index:200;
+  background:#0d0f12;border-right:1px solid #1a1f25;padding:80px 24px;
+  box-shadow:2px 0 18px rgba(0,0,0,.35);
+}
+
+/* VIKTIG: kolonne-layout for lenkene */
+.sidebar nav{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:16px;
+}
+
+/* VIKTIG: blokkelement, så hver lenke blir en rad */
+.sidebar nav a{
+  display:block;
+  width:100%;
+  color:#c7cdd6;
+  text-decoration:none;
+  font-size:16px;
+  font-weight:500;
+  padding:8px 6px;
+  border-radius:10px;
+  transition:color .2s ease, background .2s ease, transform .15s ease;
+}
+
+.sidebar nav a:hover{ color:#00e1ff; background:#11161c; transform:translateX(2px); }
+.sidebar nav a.active{ color:#00e1ff; font-weight:600; background:#0f141a; }
+
+@media (max-width:520px){
+  .sidebar{ width:200px; padding:70px 18px; }
+  .logo a{ font-size:18px; }
+}
+
+/* === Forbedret sidebar med overlay og toggle-knapp === */
+
+/* Knappen for å åpne/lukke (hamburger/X) */
+.menu-toggle {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  background: none;
+  border: 1px solid #27303a;
+  border-radius: 10px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  color: #e4e9ef;
+  z-index: 1101;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  background: rgba(14, 18, 22, 0.55);
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.menu-toggle:hover {
+  color: var(--accent);
+  border-color: #33404d;
+}
+
+/* Mørk bakgrunn bak sidepanelet */
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  backdrop-filter: blur(2px);
+  transition: opacity 0.25s ease;
+}
+
+/* Selve sidepanelet */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  z-index: 200;
+  background: rgba(13, 15, 18, 0.97);
+  border-right: 1px solid #1b2026;
+  box-shadow: 2px 0 18px rgba(0, 0, 0, 0.35);
+  padding: 80px 24px;
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transform: translateX(-260px);
+  transition: transform 0.35s ease;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* Lenker i sidepanelet */
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.sidebar nav a {
+  display: block;
+  width: 100%;
+  color: #c7cdd6;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 6px;
+  border-radius: 10px;
+  transition: color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+}
+
+.sidebar nav a:hover {
+  color: #00e1ff;
+  background: #11161c;
+  transform: translateX(2px);
+}
+
+.sidebar nav a.active {
+  color: #00e1ff;
+  font-weight: 600;
+  background: #0f141a;
+}
+
+/* Responsiv justering */
+@media (max-width: 520px) {
+  .sidebar {
+    width: 200px;
+    padding: 70px 18px;
+  }
+}
