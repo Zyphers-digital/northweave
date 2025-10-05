@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import "./SidebarMenu.css";
+import "./SideBarMenu.css";
 
 export default function SidebarMenu() {
   const [open, setOpen] = useState(false);
