@@ -2,7 +2,7 @@
    NorthWeave — hovedstilark (UTF-8)
    -------------------------------------------- */
 
-@import "./components/SidebarMenu.css";
+ @import url("./components/SidebarMenu.css");
 
 
 /* Google Fonts fallback i index.html:
