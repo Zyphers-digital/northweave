@@ -14,7 +14,7 @@ function formatPris(n) {
 }
 
 const DATA = [
-  { id: "p1", tittel: "Frontlepp – twill", kategori: "Karosseri", pris: 0, bilde: "/images/Prod-frontlip.jpg" },
+  { id: "p1", tittel: "Frontleppe – twill", kategori: "Karosseri", pris: 0, bilde: "/images/Prod-frontlip.jpg" },
   { id: "p2", tittel: "Sideskjørt – twill", kategori: "Karosseri", pris: 0, bilde: "/images/prod-sideskirt.jpg" },
   { id: "p3", tittel: "Interiørpanel – forged", kategori: "Interiør", pris: 0, bilde: "/images/prod-interior-forged.jpg" },
   { id: "p4", tittel: "Speildeksel – forged", kategori: "Karosseri", pris: 0, bilde: "/images/prod-mirror-forged.jpg" },
