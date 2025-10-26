@@ -14,14 +14,14 @@ function formatPris(n) {
 }
 
 const DATA = [
-  { id: "p1", tittel: "Frontlepp – twill", kategori: "Karosseri", pris: 4990, bilde: "/images/Prod-frontlip.jpg" },
-  { id: "p2", tittel: "Sideskjørt – twill", kategori: "Karosseri", pris: 4390, bilde: "/images/prod-sideskirt.jpg" },
-  { id: "p3", tittel: "Interiørpanel – forged", kategori: "Interiør", pris: 2890, bilde: "/images/prod-interior-forged.jpg" },
-  { id: "p4", tittel: "Speildeksel – forged", kategori: "Karosseri", pris: 1690, bilde: "/images/prod-mirror-forged.jpg" },
-  { id: "p5", tittel: "Canard-sett – twill", kategori: "Motorsport", pris: 2190, bilde: "/images/prod-canards.jpg" },
+  { id: "p1", tittel: "Frontlepp – twill", kategori: "Karosseri", pris: 0, bilde: "/images/Prod-frontlip.jpg" },
+  { id: "p2", tittel: "Sideskjørt – twill", kategori: "Karosseri", pris: 0, bilde: "/images/prod-sideskirt.jpg" },
+  { id: "p3", tittel: "Interiørpanel – forged", kategori: "Interiør", pris: 0, bilde: "/images/prod-interior-forged.jpg" },
+  { id: "p4", tittel: "Speildeksel – forged", kategori: "Karosseri", pris: 0, bilde: "/images/prod-mirror-forged.jpg" },
+  { id: "p5", tittel: "Canard-sett – twill", kategori: "Motorsport", pris: 0, bilde: "/images/prod-canards.jpg" },
   { id: "p6", tittel: "Skreddersydd layup – custom", kategori: "Custom", pris: 0, bilde: "/images/Custom.jpg", custom: true },
-  { id: "p7", tittel: "Panser – twill", kategori: "Karosseri", pris: 12990, bilde: "/images/prod-hood.jpg" },
-  { id: "p8", tittel: "Dør – twill", kategori: "Karosseri", pris: 15990, bilde: "/images/prod-door.jpg" },
+  { id: "p7", tittel: "Panser – twill", kategori: "Karosseri", pris: 0, bilde: "/images/prod-hood.jpg" },
+  { id: "p8", tittel: "Dør – twill", kategori: "Karosseri", pris: 0, bilde: "/images/prod-door.jpg" },
 ];
 
 const KATEGORIER = ["Alle", "Karosseri", "Interiør", "Motorsport", "Custom"];
